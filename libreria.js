@@ -10,6 +10,10 @@ fetch("https://striveschool-api.herokuapp.com/books")
 
     const riga = document.getElementById("riga-libri");
 
+    const placeholder = document.getElementById("riga-libri-placeholder");
+
+    placeholder.classList.add("d-none");
+
     books.forEach((book) => {
       riga.innerHTML += `<div class="card" style="width: 18rem;">
       <img src="${book.img}" class="card-img-top mt-3" alt="${book.title}" style = "height: 390px">
